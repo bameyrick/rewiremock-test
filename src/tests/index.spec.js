@@ -10,7 +10,7 @@ describe('Tests', () => {
         const promiseInstance = promiseInstanceMock();
         const mockedFetch = fetchMock(promiseInstance);
         
-        rewireMock('./src/js/fetch')
+        rewireMock('./js/fetch')
             .withDefault(mockedFetch);
 
         rewireMock.enable();

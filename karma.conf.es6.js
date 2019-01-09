@@ -3,16 +3,16 @@ import webpack from './webpack.config';
 
 export default function(config) {
     config.set({
-        // basePath: path.resolve('./src'),
+        basePath: path.resolve('./src'),
 
         files: [
-            'src/tests/index.spec.js'
+            'tests/index.spec.js'
         ],
 
         frameworks: ['mocha', 'chai-spies', 'chai'],
 
         preprocessors: {
-            'src/tests/index.spec.js': ['webpack'],
+            'tests/index.spec.js': ['webpack'],
         },
 
         webpack,

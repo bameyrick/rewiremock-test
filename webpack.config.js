@@ -3,7 +3,7 @@ import rewireMockPlugin from 'rewiremock/webpack/plugin';
 import * as path from 'path';
 
 module.exports = {
-    // context: `${__dirname}/src`,
+    context: `${__dirname}/src`,
 
     mode: 'development',
 
